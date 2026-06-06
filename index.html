@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大胃王赛 - 正式赛一轮规则</title>
+    
+    <!-- 引入 Tailwind CSS 和 FontAwesome 图标库 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- 配置 Tailwind 自定义颜色和字体 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF8C42', // 主色调：活力橙
+                        secondary: '#FFD166', // 辅助色：浅黄/奶油色
+                        dark: '#8B4513', // 深色：棕色（用于背景或边框）
+                        light: '#FFF5E1', // 极浅色：米白
+                    },
+                    fontFamily: {
+                        comic: ['"Comic Sans MS"', '"Chalkboard SE"', 'sans-serif'], // 手写/卡通风格字体
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- 自定义工具类 -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow-cute {
+                text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.8), 4px 4px 0px rgba(139, 69, 19, 0.3);
+            }
+            .bg-pattern {
+                background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFD166' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-secondary via-light to-primary min-h-screen flex items-center justify-center p-4">
+
+    <!-- 主卡片容器 -->
+    <div class="w-full max-w-2xl bg-light/90 rounded-3xl shadow-2xl p-6 md:p-10 border-4 border-dark border-dashed relative overflow-hidden">
+        
+        <!-- 装饰性小图标 (模拟原图的薯条/汉堡背景) -->
+        <div class="absolute -top-4 -left-4 text-dark opacity-10 text-6xl transform -rotate-12">
+            <i class="fas fa-hamburger"></i>
+        </div>
+        <div class="absolute -bottom-4 -right-4 text-dark opacity-10 text-6xl transform rotate-12">
+            <i class="fas fa-french-fries"></i>
+        </div>
+        <div class="absolute top-1/4 right-4 text-dark opacity-10 text-4xl">
+            <i class="fas fa-cookie-bite"></i>
+        </div>
+
+        <!-- 标题区域 -->
+        <div class="text-center mb-8">
+            <h1 class="text-[clamp(2.5rem,8vw,4.5rem)] font-comic font-bold text-primary drop-shadow-lg text-shadow-cute relative z-10">
+                大胃王赛
+                <span class="inline-block ml-2 text-3xl align-middle">👑</span> <!-- 皇冠装饰 -->
+            </h1>
+            <div class="w-32 h-2 bg-secondary mx-auto mt-2 rounded-full"></div>
+        </div>
+
+        <!-- 规则内容区域 -->
+        <div class="space-y-4 text-gray-800 text-base md:text-lg leading-relaxed font-comic relative z-10 bg-white/50 p-6 rounded-xl shadow-inner">
+            
+            <h2 class="text-2xl font-bold text-center text-dark mb-4 underline decoration-secondary">
+                正式赛一轮规则
+            </h2>
+
+            <p class="text-justify">
+                <span class="font-bold text-primary">1.</span> 预选晋级的选手将采用A~D组分组制，每组8人，组内比（8→4）
+            
+            <p class="text-justify">
+                <span class="font-bold text-primary">2.</span> 为保证压线进预选的比赛体验，预选前4的选手将单独在一组（预选第一在A组，预选第二在B组...），其余选手将在7月4日13:00群主在douyin直播转盘决定（有负责人员转载到快手）
+            
+            <p class="text-justify">
+                <span class="font-bold text-primary">3.</span> A组比赛时间：7月18日15:00-次日11:00，还是比课题，但是选曲前两首由组内8人决定（若8人选曲各不一样将由转盘决定两首），第三首由主办方决定
+            
+            <p class="text-justify">
+                <span class="font-bold text-primary">4.</span> 正式赛一轮成绩请勿在群内上传，私信群主上传，发图片就行，可以不用北京时间
+            
+
+            <!-- 分隔线 -->
+            <hr class="my-4 border-t-2 border-secondary/50">
+
+            <h3 class="font-bold text-dark text-lg">
+                注：
+            </h3>
+            <p class="text-justify">
+                弃赛/超时：未在规定时间内或者规定窗口内提交成绩，视为弃赛/0分（DNF）
+            
+
+            <p class="text-justify">
+                <span class="font-bold text-primary">选曲确认：</span>比赛期间禁止选取HD,EZ难度
+            
+            <p class="text-justify">
+                <span class="font-bold text-primary">直播全程回放：</span>7月4日分组转盘直播时，录屏存档，避免争议。
+            
+            
+            <p class="text-right text-sm text-gray-600 mt-6 italic">
+                （最终解释权归主办方所有）
+            
+        </div>
+
+        <!-- 底部装饰 -->
+        <div class="mt-8 flex justify-center gap-4 text-dark opacity-50">
+            <i class="fas fa-utensils"></i>
+            <i class="fas fa-cutlery"></i>
+            <i class="fas fa-glass-cheers"></i>
+        </div>
+
+    </div>
+
+</body>
+</html>
